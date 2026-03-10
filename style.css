@@ -1,184 +1,168 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
+body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background: #f4f4f2;
   color: #2f2f2f;
   line-height: 1.7;
-
 }
 
 .container {
-
   max-width: 860px;
   margin: auto;
-  padding: 60px 30px;
+  padding: 60px 30px 72px;
   position: relative;
-
 }
 
 .lang-switch {
-
   position: absolute;
   top: 20px;
   right: 30px;
   font-size: 14px;
   color: #666;
-
 }
 
 .lang-switch a {
-
   text-decoration: none;
   color: #2a7ae2;
-
 }
 
 .lang-switch a:hover {
-
   text-decoration: underline;
-
 }
 
 header {
-
   text-align: center;
-  margin-bottom: 50px;
-
+  margin-bottom: 56px;
 }
 
 h1 {
-
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: 300;
-  letter-spacing: -0.03em;
-
+  letter-spacing: -0.04em;
 }
 
 .subtitle {
-
-  margin-top: 10px;
+  margin-top: 12px;
   color: #6c6c6c;
   font-size: 1rem;
-
 }
 
 section {
+  margin-bottom: 48px;
+  padding-top: 10px;
+}
 
-  margin-bottom: 42px;
-
+section + section {
+  border-top: 1px solid #e7e7e3;
+  padding-top: 32px;
 }
 
 h2 {
-
   margin: 0 0 18px;
   font-size: 1.45rem;
   font-weight: 500;
-
+  letter-spacing: -0.02em;
 }
 
 .intro {
-
   text-align: center;
-
 }
 
 .intro p {
-
   max-width: 760px;
-  margin: auto;
-  margin-bottom: 18px;
-
+  margin: 0 auto 18px;
 }
 
 .profile {
-
   width: 220px;
+  max-width: 100%;
   border-radius: 24px;
   display: block;
-  margin: auto;
-  margin-bottom: 28px;
-
+  margin: 0 auto 28px;
 }
 
 .card-list,
-.contact-list {
-
+.contact-list,
+.project-list {
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
 
-.card-list li {
-
-  background: rgba(255, 255, 255, 0.7);
+.card-list li,
+.project-list li {
+  background: rgba(255, 255, 255, 0.72);
   border: 1px solid #e7e7e3;
   border-radius: 18px;
   padding: 18px 20px;
   margin-bottom: 14px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
 
+.project-list li {
+  padding: 20px 22px;
+}
+
+.project-title {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.project-meta {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #6f6f6f;
 }
 
 .contact-list li {
-
   margin-bottom: 10px;
-
 }
 
 b {
-
   font-weight: 600;
-
 }
 
 a {
-
   color: #2a7ae2;
   text-decoration: none;
-
 }
 
 a:hover {
-
   text-decoration: underline;
-
 }
 
 footer {
-
   margin-top: 56px;
   text-align: center;
   color: #7a7a7a;
   font-size: 0.95rem;
-
 }
 
 @media (max-width: 640px) {
-
   .container {
-
-    padding: 40px 20px;
-
+    padding: 40px 20px 56px;
   }
 
   h1 {
-
-    font-size: 2rem;
-
+    font-size: 2.1rem;
   }
 
   .profile {
-
     width: 180px;
-
   }
 
   .lang-switch {
-
     right: 20px;
-
+    top: 16px;
   }
 
+  section + section {
+    padding-top: 24px;
+  }
 }
