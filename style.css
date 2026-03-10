@@ -1,46 +1,80 @@
 body {
 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
-  background: #f5f5f5;
-  color: #333;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f4f4f2;
+  color: #2f2f2f;
+  line-height: 1.7;
 
 }
 
 .container {
 
-  max-width: 800px;
+  max-width: 860px;
   margin: auto;
-  padding: 40px;
+  padding: 60px 30px;
+  position: relative;
+
+}
+
+.lang-switch {
+
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 14px;
+  color: #666;
+
+}
+
+.lang-switch a {
+
+  text-decoration: none;
+  color: #2a7ae2;
+
+}
+
+.lang-switch a:hover {
+
+  text-decoration: underline;
 
 }
 
 header {
 
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 
 }
 
 h1 {
 
-  font-weight: 400;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+
+}
+
+.subtitle {
+
+  margin-top: 10px;
+  color: #6c6c6c;
+  font-size: 1rem;
+
+}
+
+section {
+
+  margin-bottom: 42px;
 
 }
 
 h2 {
 
-  margin-top: 40px;
+  margin: 0 0 18px;
+  font-size: 1.45rem;
   font-weight: 500;
-
-}
-
-.profile {
-
-  width: 200px;
-  border-radius: 20px;
-  display: block;
-  margin: auto;
-  margin-bottom: 20px;
 
 }
 
@@ -50,16 +84,52 @@ h2 {
 
 }
 
-ul {
+.intro p {
 
-  list-style: none;
-  padding: 0;
+  max-width: 760px;
+  margin: auto;
+  margin-bottom: 18px;
 
 }
 
-li {
+.profile {
 
-  margin-bottom: 12px;
+  width: 220px;
+  border-radius: 24px;
+  display: block;
+  margin: auto;
+  margin-bottom: 28px;
+
+}
+
+.card-list,
+.contact-list {
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.card-list li {
+
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #e7e7e3;
+  border-radius: 18px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+
+}
+
+.contact-list li {
+
+  margin-bottom: 10px;
+
+}
+
+b {
+
+  font-weight: 600;
 
 }
 
@@ -70,10 +140,45 @@ a {
 
 }
 
+a:hover {
+
+  text-decoration: underline;
+
+}
+
 footer {
 
+  margin-top: 56px;
   text-align: center;
-  margin-top: 60px;
-  color: #777;
+  color: #7a7a7a;
+  font-size: 0.95rem;
+
+}
+
+@media (max-width: 640px) {
+
+  .container {
+
+    padding: 40px 20px;
+
+  }
+
+  h1 {
+
+    font-size: 2rem;
+
+  }
+
+  .profile {
+
+    width: 180px;
+
+  }
+
+  .lang-switch {
+
+    right: 20px;
+
+  }
 
 }
