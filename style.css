@@ -82,7 +82,7 @@ section + section {
 
 h2 {
 
-  margin: 0 0 18px;
+  margin: 0 0 22px;
   font-size: 1.45rem;
   font-weight: 500;
   letter-spacing: -0.02em;
@@ -114,8 +114,19 @@ h2 {
 
 }
 
+/* lists */
+
 .card-list,
-.contact-list,
+.contact-list {
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* project cards */
+
 .project-list {
 
   list-style: none;
@@ -123,6 +134,63 @@ h2 {
   margin: 0;
 
 }
+
+.project-list li {
+
+  background: rgba(255,255,255,0.75);
+  border: 1px solid #e7e7e3;
+  border-radius: 20px;
+  padding: 26px 26px 24px;
+  margin-bottom: 24px;
+
+}
+
+.project-title {
+
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+
+}
+
+/* stack tags */
+
+.project-tags {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+
+}
+
+.project-tags span {
+
+  font-size: 0.82rem;
+  color: #5f6b7a;
+  background: #eef3f8;
+  border: 1px solid #dbe4ee;
+  border-radius: 999px;
+  padding: 6px 10px;
+  line-height: 1.2;
+
+}
+
+.project-list p {
+
+  margin: 0 0 14px;
+  max-width: 760px;
+
+}
+
+.project-list p:last-child {
+
+  margin-bottom: 0;
+
+}
+
+/* services cards */
 
 .card-list li {
 
@@ -134,34 +202,7 @@ h2 {
 
 }
 
-.project-list li {
-
-  margin-bottom: 28px;
-
-}
-
-.project-title {
-
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 6px;
-
-}
-
-.project-meta {
-
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 12px;
-
-}
-
-.project-list p {
-
-  margin-top: 0;
-  margin-bottom: 12px;
-
-}
+/* contact */
 
 .contact-list li {
 
@@ -196,6 +237,8 @@ footer {
   font-size: 0.95rem;
 
 }
+
+/* mobile */
 
 @media (max-width: 640px) {
 
